@@ -300,15 +300,15 @@ Dataset ที่ใช้ในการทดลองนี้คือ **HAM
 
 | Metric | Custom CNN (Baseline) | ResNet50 | EfficientNet-B0 (ProposedWinner) |
 | :--- | :--- | :--- | :--- |
-| **Overall Accuracy** | 0.6425 | **0.7439** | 0.7259 |
-| **F1-Score (Macro Avg)** | 0.5092 | 0.6172 | **0.6403** |
-| **F1-Score (Weighted Avg)** | 0.6763 | **0.7612** | 0.7462 |
-| **Recall (mel)** | **0.6323** | 0.5426 | 0.5426 |
-| **Precision (mel)** | 0.3190 | 0.4416 | 0.4144 |
-| **Recall (df)** | 0.5652 | 0.6087 | **0.6957** |
-| **Precision (df)** | 0.2708 | 0.4375 | **0.6667** |
-| **Training Time (per epoch)** | 100 s | 105 s | **94 s** |
-| **Overfitting** | High | Medium | **Low** |
+| **Overall Accuracy** | 0.6425 | _**0.7439**_ | 0.7259 |
+| **F1-Score (Macro Avg)** | 0.5092 | 0.6172 | _**0.6403**_ |
+| **F1-Score (Weighted Avg)** | 0.6763 | _**0.7612**_ | 0.7462 |
+| **Recall (mel)** | _**0.6323**_ | 0.5426 | 0.5426 |
+| **Precision (mel)** | 0.3190 | _**0.4416**_ | 0.4144 |
+| **Recall (df)** | 0.5652 | 0.6087 | _**0.6957**_ |
+| **Precision (df)** | 0.2708 | 0.4375 | _**0.6667**_ |
+| **Training Time (per epoch)** | 100 s | 105 s | _**94 s**_ |
+| **Overfitting** | High | Medium | _**Low**_ |
 
 จากการวิเคราะห์ผลลัพธ์ในตารางพบว่า โมเดล **ResNet50** ให้ค่า **Overall Accuracy สูงสุด (0.7439)** และมี **F1-Score (Weighted Avg) สูงที่สุด (0.7612)** ซึ่งแสดงให้เห็นประสิทธิภาพที่ดีในการจัดการกับคลาสส่วนใหญ่ เช่น nv และโมเดล **EfficientNet-B0** ก็ให้ค่า **F1-Score (Macro Avg) ที่ดีที่สุด (0.6403)** ซึ่งชี้ให้เห็นว่า EfficientNet-B0 เป็นโมเดลที่มี Balance ที่สุดในการจำแนก Minority Classes ได้อย่างเท่าเทียมกัน
 
