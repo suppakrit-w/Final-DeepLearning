@@ -330,7 +330,7 @@ Dataset ที่ใช้ในการทดลองนี้คือ **HAM
 | weighted avg	| 	0.7551	| 	0.6425	| 	0.6763	| 
 
 #### ResNet	
-| Class	Precision | 	Recall | 	F1-Score | 
+| Class | 	Precision | 	Recall | 	F1-Score | 
 | :--- | :--- | :--- | :--- |
 | akiec | 	0.4153 | 	0.7538 | 	0.5355 | 
 | bcc | 	0.518 | 	0.699 | 	0.595 | 
@@ -344,7 +344,7 @@ Dataset ที่ใช้ในการทดลองนี้คือ **HAM
 | weighted avg | 	0.7971 | 	0.7439 | 	0.7612 | 
 
 #### Efficient NET			
-| Class	Precision | 	Recall | 	F1-Score | 
+| Class | 	Precision | 	Recall | 	F1-Score | 
 | :--- | :--- | :--- | :--- |
 | akiec | 	0.6197 | 	0.6769 | 	0.6471 | 
 | bcc | 	0.5455 | 	0.699 | 	0.6128 | 
