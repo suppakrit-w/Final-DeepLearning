@@ -1,4 +1,4 @@
-นี่คือข้อความที่คุณให้มา โดยแปลงเป็นรูปแบบ Markdown ครับ:
+# Deep Learning 204466 Final Project
 
 ## การจำแนกประเภทตุ่มเเละรอยโรคผิวหนัง 7 ชนิด จากชุดข้อมูล HAM10000 โดยใช้ Transfer Learning และ Weighted Sampling
 
