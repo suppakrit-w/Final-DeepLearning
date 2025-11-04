@@ -42,13 +42,12 @@
 
 1. ส่วนสกัด Feature ประกอบไปด้วย Convolutional Blocks หลายชั้น โดยแต่ละ Block ประกอบด้วยชั้น Convolution สำหรับสกัดลักษณะเด่นของภาพ ตามด้วย ReLU เพื่อเพิ่มความไม่เชิงเส้นให้กับโมเดล และชั้น Max Pooling เพื่อย่อขนาดข้อมูลและคงเฉพาะลักษณะที่สำคัญที่สุดไว้
 
-1. ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.001.png)ส่วน Classifier ประกอบด้วย Fully Connected Layers โดยเริ่มจาก Flatten Layer เพื่อแปลงข้อมูลจากรูปแบบหลายมิติให้เป็นเวกเตอร์หนึ่งมิติ ตามด้วย Dense Layer และ ReLU เพื่อเรียนรู้รูปแบบเชิงซับซ้อน จากนั้นใช้ Dropout Layer เพื่อลดการเกิด overfitting และ Dense Layer สุดท้ายสำหรับการทำนายผลลัพธ์ของแต่ละคลาส
+ส่วน Classifier ประกอบด้วย Fully Connected Layers โดยเริ่มจาก Flatten Layer เพื่อแปลงข้อมูลจากรูปแบบหลายมิติให้เป็นเวกเตอร์หนึ่งมิติ ตามด้วย Dense Layer และ ReLU เพื่อเรียนรู้รูปแบบเชิงซับซ้อน จากนั้นใช้ Dropout Layer เพื่อลดการเกิด overfitting และ Dense Layer สุดท้ายสำหรับการทำนายผลลัพธ์ของแต่ละคลาส
 
-   ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.002.png)
-
-
-
+   ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.001.png)
    **ภาพที่ 1** แผนภาพเชิงแนวคิด Custom CNN
+
+
 
 1. **ResNet50**
 
@@ -79,10 +78,6 @@
 1. Activation Function EfficientNet ใช้ SiLU เป็น Activation Function หลักภายใน ซึ่งเป็นฟังก์ชันที่ Smooth และมีประสิทธิภาพสูงกว่า ReLU
 
 ![EfficientNet Diagram](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.004.png)
-
-
-
-
 
 **ภาพที่ 3** แผนภาพเชิงแนวคิด EfficientNet-B0
 
