@@ -42,9 +42,9 @@
 
 1. ส่วนสกัด Feature ประกอบไปด้วย Convolutional Blocks หลายชั้น โดยแต่ละ Block ประกอบด้วยชั้น Convolution สำหรับสกัดลักษณะเด่นของภาพ ตามด้วย ReLU เพื่อเพิ่มความไม่เชิงเส้นให้กับโมเดล และชั้น Max Pooling เพื่อย่อขนาดข้อมูลและคงเฉพาะลักษณะที่สำคัญที่สุดไว้
 
-1. ![](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.001.png)ส่วน Classifier ประกอบด้วย Fully Connected Layers โดยเริ่มจาก Flatten Layer เพื่อแปลงข้อมูลจากรูปแบบหลายมิติให้เป็นเวกเตอร์หนึ่งมิติ ตามด้วย Dense Layer และ ReLU เพื่อเรียนรู้รูปแบบเชิงซับซ้อน จากนั้นใช้ Dropout Layer เพื่อลดการเกิด overfitting และ Dense Layer สุดท้ายสำหรับการทำนายผลลัพธ์ของแต่ละคลาส
+1. ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.001.png)ส่วน Classifier ประกอบด้วย Fully Connected Layers โดยเริ่มจาก Flatten Layer เพื่อแปลงข้อมูลจากรูปแบบหลายมิติให้เป็นเวกเตอร์หนึ่งมิติ ตามด้วย Dense Layer และ ReLU เพื่อเรียนรู้รูปแบบเชิงซับซ้อน จากนั้นใช้ Dropout Layer เพื่อลดการเกิด overfitting และ Dense Layer สุดท้ายสำหรับการทำนายผลลัพธ์ของแต่ละคลาส
 
-   ![](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.002.png)
+   ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.002.png)
 
 
 
@@ -64,7 +64,7 @@
    1. ` `nn.Dropout(0.5) ป้องกัน Overfitting
    1. ` `nn.Linear(in\_features=512, out\_features=7) ทำการส่งต่อไปยัง 7 โหนดสุดท้ายสำหรับ 7 คลาส
 
-      ![](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.003.png)
+      ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.003.png)
 
 
 
@@ -160,7 +160,7 @@ plot\_histort( ) ใช้ในการ plot กราฟ accuracy และ l
 1. ` `ไฝ (Melanocytic - nv) 
 1. ` `รอยโรคหลอดเลือด (Vascular lesions - vasc)
 
-   ![](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.006.png)
+   ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.006.png)
 
    **ภาพที่ 5** กราฟแสดงจำนวนของแต่ละคลาส
 
@@ -255,7 +255,7 @@ AI-generated content may be incorrect.](Aspose.Words.6a844693-d34b-4eaa-a347-df9
 
 1. ` `Accuracy และ Loss ของโมเดล ResNet50
 
-![](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.008.png)
+![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.008.png)
 
 
 
@@ -274,9 +274,7 @@ AI-generated content may be incorrect.](Aspose.Words.6a844693-d34b-4eaa-a347-df9
 จะเห็นได้ว่า ResNet50 ให้สมรรถนะโดยรวมสูงสุดในด้าน Accuracy และมีค่า Loss ที่ลดลงได้ต่อเนื่องที่สุด
 
 
-1. ![A graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of a graph of
-
-AI-generated content may be incorrect.](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.009.png)** Accuracy และ Loss ของโมเดล EfficientNet-B0
+1. ![](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.009.png)** Accuracy และ Loss ของโมเดล EfficientNet-B0
 
 **ภาพที่ 8** กราฟแสดง Accuracy และ Loss ของโมเดล EfficientNet-B0
 
