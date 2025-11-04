@@ -102,7 +102,7 @@
 * **Cell 1:** ในส่วนแรก ทำการ define CNN model ที่เราสร้างเอง โดยใช้สถาปัตยกรรมตามข้อ 3.1 Custom CNN ในส่วนต่อมา function **create\_model( )** มี 3 โหมดให้เลือก คือ `custom`, `resnet`, `efficientnet`
     * **custom:** ใช้ **MyCustomCNN** ในการสร้าง model
     * **resnet:** ทำการโหลดโมเดล ResNet50 ที่ **pre-trained** มาแล้ว จากนั้นตั้งให้ **param.requires\_grad = False** เพื่อ **freeze parameter** ให้ไม่ถูกเทรน จากนั้นแทนที่ **model.fc** (ซึ่งเป็น classifier เดิม) ด้วยบล็อก fc ใหม่ **nn.Squential (Linear 2048 -> 512 -> 7)** จากนั้นตั้งค่า **Adam optimizer** ให้ train เฉพาะแค่ parameter ของบล็อกใหม่
-    * **efficientnet:** ทำการโหลดโมเดล eddicientnet\_b0 ที่ pre-trained มาแล้ว จากนั้นตั้งให้ param.requires\_grad = False เพื่อ freeze parameter ให้ไม่ถูกเทรน จากนั้นแทนที่ model.classifier (ซึ่งเป็น classifier เดิม) ด้วยบล็อก fc ใหม่ nn.Squential (Linear 2048 -> 512 -> 7) จากนั้นตั้งค่า Adam optimizer ให้ train เฉพาะแค่ parameter ของบล็อกใหม่
+    * **efficientnet:** ทำการโหลดโมเดล efficientnet\_b0 ที่ pre-trained มาแล้ว จากนั้นตั้งให้ param.requires\_grad = False เพื่อ freeze parameter ให้ไม่ถูกเทรน จากนั้นแทนที่ model.classifier (ซึ่งเป็น classifier เดิม) ด้วยบล็อก fc ใหม่ **nn.Squential (Linear 1280 -> 512 -> 7)** จากนั้นตั้งค่า Adam optimizer ให้ train เฉพาะแค่ parameter ของบล็อกใหม่
     * จากนั้นตั้งค่า Loss funtion เป็น **Cross Entropy Loss**
 
 ### Train Model
