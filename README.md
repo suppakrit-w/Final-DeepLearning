@@ -316,7 +316,7 @@ Dataset ที่ใช้ในการทดลองนี้คือ **HAM
 
 ---
 
-### Model Performance Matrix
+### Model Performance Metric
 #### Custom CNN			
 | Class	| Precision	| Recall	| F1-Score | 
 | :--- | :--- | :--- | :--- |
