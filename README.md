@@ -78,9 +78,7 @@
 1. Trainable ทำการแทนที่ส่วน classifier เดิมด้วย head ใหม่ที่ออกแบบเองเพื่อให้จำแนก 7 คลาส โดยรับ Input จากชั้น Global Average Pooling ที่มี 1280 โหนด
 1. Activation Function EfficientNet ใช้ SiLU เป็น Activation Function หลักภายใน ซึ่งเป็นฟังก์ชันที่ Smooth และมีประสิทธิภาพสูงกว่า ReLU
 
-![A diagram of a computer process
-
-AI-generated content may be incorrect.](Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.004.png)
+![EfficientNet Diagram](assets/Aspose.Words.6a844693-d34b-4eaa-a347-df9c340031b9.004.png)
 
 
 
