@@ -317,6 +317,7 @@ Dataset ที่ใช้ในการทดลองนี้คือ **HAM
 ### Model Performance Matrix
 Custom CNN			
 | Class	| Precision	| Recall	| F1-Score | 
+| :--- | :--- | :--- | :--- |
 | akiec	| 0.3182	| 	0.5385	| 	0.4 | 
 | bcc	| 	0.4907	| 	0.5146	| 	0.5024	| 
 | bkl	| 	0.3932	| 	0.5273	| 	0.4505	| 
